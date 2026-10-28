@@ -18,11 +18,15 @@
   PORTFOLIO DE LUCAS POIDEVIN
 
   Comment t'y retrouver :
-  - Fais Ctrl+F sur « À compléter » : tu retrouves tout ce qu'il reste à remplir.
-  - Les 7 domaines ont chacun une couleur (data-band="1" à "7"). Elles suivent le code couleur
-    des résistances : marron = 1, rouge = 2, orange = 3, jaune = 4, vert = 5, bleu = 6, violet = 7.
-  - Chaque domaine avec des sous-onglets utilise le bloc « tabs » (voir le README pour en ajouter un).
-  - Un bloc « entry » = une fiche (projet, stage, activité...). Copie-colle-le pour en ajouter.
+  - Ctrl+F sur « À compléter » : tu retrouves tout ce qu'il reste à remplir (cadres en pointillés sur le site).
+    Quand tu as rempli un cadre, supprime tout le <span class="todo">...</span> et écris ton texte à la place.
+  - PHOTOS : chaque fiche a une ligne <img src="assets/photo-projet.svg" ...>.
+    Remplace seulement le nom du fichier par celui de ta photo (ex. src="assets/7robot.jpg").
+    Si ta photo est directement à côté de index.html (sans dossier), écris juste src="7robot.jpg".
+    Pour une fiche sans photo : supprime le bloc <figure class="entry__photo">...</figure>
+    ET enlève « entry--photo » de la ligne <article class="entry entry--photo">.
+  - AJOUTER UNE FICHE (projet, activité, stage...) : copie un bloc <article>...</article> entier et colle-le juste après.
+  - Les 7 domaines ont chacun leur couleur dans le menu : marron, rouge, orange, jaune, vert, bleu, violet.
 -->
 
 <body>
@@ -59,46 +63,18 @@
               <h1 class="hero__name" id="welcome-title"><span>Lucas</span> <span>Poidevin</span></h1>
               <p class="hero__role">Engineering student at ENSEEIHT, Toulouse INP</p>
               <p class="hero__track">Electronics, Electrical Energy &amp; Automation (3EA)</p>
-              <p class="hero__lead">I’m interested in robotics, new technologies and electronics. This portfolio brings together my engineering course, my projects and the experiences around them.</p>
+              <p class="hero__lead">I’m interested in robotics, new technologies and electronics. Here you will find my engineering course, my projects and the experiences around them.</p>
+              <p class="hero__lead"><span class="todo">À compléter : une ou deux phrases en plus sur toi (ce que tu cherches, ce qui te motive)</span></p>
               <p class="hero__actions">
                 <a class="btn btn--solid" href="#course">See my projects</a>
                 <a class="btn" href="#contact">Get in touch</a>
               </p>
             </div>
 
-            <figure class="hero__figure">
-              <svg class="automaton" viewBox="0 0 57 56" role="img" aria-label="Rule 30 cellular automaton grown from a single cell over 56 generations" focusable="false" xmlns="http://www.w3.org/2000/svg"><path class="automaton__cells" d="M1 1.5h1M2 2.5h1M1 3.5h3M4 4.5h1M1 5.5h1M3 5.5h3M3 6.5h1M6 6.5h1M2 7.5h6M1 8.5h2M8 8.5h1M3 9.5h1M7 9.5h3M1 10.5h4M6 10.5h2M10 10.5h1M1 11.5h1M6 11.5h1M8 11.5h4M1 12.5h2M5 12.5h2M8 12.5h1M12 12.5h1M1 13.5h1M3 13.5h3M8 13.5h2M11 13.5h3M3 14.5h1M6 14.5h3M11 14.5h1M14 14.5h1M2 15.5h5M9 15.5h7M2 16.5h1M7 16.5h3M16 16.5h1M2 17.5h2M6 17.5h2M10 17.5h1M15 17.5h3M1 18.5h2M4 18.5h3M8 18.5h4M14 18.5h2M18 18.5h1M1 19.5h1M4 19.5h1M8 19.5h1M12 19.5h3M16 19.5h4M2 20.5h4M7 20.5h3M11 20.5h2M16 20.5h1M20 20.5h1M1 21.5h2M7 21.5h1M11 21.5h1M13 21.5h1M15 21.5h3M19 21.5h3M1 22.5h1M3 22.5h1M6 22.5h3M10 22.5h2M13 22.5h1M15 22.5h1M19 22.5h1M22 22.5h1M3 23.5h4M10 23.5h1M13 23.5h1M15 23.5h2M18 23.5h6M1 24.5h3M7 24.5h1M9 24.5h5M15 24.5h1M18 24.5h1M24 24.5h1M4 25.5h1M6 25.5h2M9 25.5h1M15 25.5h5M23 25.5h3M3 26.5h2M6 26.5h1M9 26.5h2M14 26.5h2M20 26.5h1M22 26.5h2M26 26.5h1M1 27.5h3M6 27.5h4M11 27.5h1M13 27.5h2M16 27.5h1M19 27.5h2M22 27.5h1M24 27.5h4M1 28.5h1M4 28.5h3M11 28.5h1M13 28.5h1M16 28.5h4M22 28.5h1M24 28.5h1M28 28.5h1M2 29.5h3M7 29.5h1M10 29.5h2M13 29.5h4M20 29.5h3M24 29.5h2M27 29.5h3M2 30.5h1M5 30.5h6M13 30.5h1M17 30.5h1M19 30.5h2M24 30.5h1M27 30.5h1M30 30.5h1M2 31.5h4M11 31.5h4M16 31.5h2M19 31.5h1M21 31.5h1M23 31.5h9M1 32.5h2M6 32.5h1M10 32.5h2M16 32.5h1M19 32.5h1M21 32.5h1M23 32.5h1M32 32.5h1M1 33.5h1M3 33.5h1M5 33.5h3M9 33.5h2M12 33.5h1M15 33.5h5M21 33.5h1M23 33.5h2M31 33.5h3M3 34.5h1M5 34.5h1M9 34.5h1M12 34.5h4M21 34.5h1M23 34.5h1M25 34.5h1M30 34.5h2M34 34.5h1M1 35.5h3M5 35.5h2M8 35.5h5M16 35.5h1M20 35.5h2M23 35.5h1M25 35.5h2M29 35.5h2M32 35.5h4M5 36.5h1M8 36.5h1M13 36.5h1M15 36.5h3M19 36.5h2M23 36.5h1M25 36.5h1M27 36.5h3M32 36.5h1M36 36.5h1M4 37.5h6M12 37.5h2M15 37.5h1M19 37.5h1M21 37.5h3M25 37.5h1M27 37.5h1M30 37.5h4M35 37.5h3M1 38.5h1M3 38.5h2M10 38.5h3M15 38.5h2M18 38.5h2M21 38.5h1M25 38.5h1M27 38.5h4M35 38.5h1M38 38.5h1M1 39.5h1M3 39.5h1M5 39.5h1M9 39.5h2M13 39.5h3M18 39.5h1M21 39.5h2M24 39.5h2M27 39.5h1M31 39.5h1M34 39.5h6M3 40.5h1M5 40.5h2M8 40.5h2M11 40.5h3M16 40.5h6M24 40.5h1M27 40.5h2M30 40.5h5M40 40.5h1M2 41.5h2M5 41.5h1M8 41.5h1M11 41.5h1M14 41.5h3M22 41.5h6M30 41.5h1M35 41.5h1M39 41.5h3M2 42.5h1M5 42.5h10M17 42.5h1M21 42.5h2M28 42.5h4M34 42.5h3M38 42.5h2M42 42.5h1M2 43.5h4M15 43.5h4M20 43.5h2M23 43.5h1M27 43.5h2M32 43.5h3M38 43.5h1M40 43.5h4M1 44.5h2M6 44.5h1M14 44.5h2M20 44.5h1M23 44.5h2M26 44.5h2M29 44.5h1M31 44.5h2M35 44.5h1M37 44.5h2M40 44.5h1M44 44.5h1M1 45.5h1M3 45.5h1M5 45.5h3M13 45.5h2M16 45.5h1M19 45.5h5M26 45.5h1M29 45.5h1M31 45.5h1M33 45.5h3M37 45.5h1M40 45.5h2M43 45.5h3M1 46.5h1M3 46.5h1M5 46.5h1M8 46.5h1M12 46.5h2M16 46.5h4M24 46.5h6M31 46.5h1M33 46.5h1M37 46.5h4M43 46.5h1M46 46.5h1M1 47.5h1M3 47.5h1M5 47.5h5M11 47.5h2M14 47.5h3M20 47.5h1M23 47.5h2M31 47.5h1M33 47.5h2M36 47.5h2M41 47.5h7M3 48.5h1M5 48.5h1M11 48.5h1M14 48.5h1M17 48.5h1M19 48.5h5M25 48.5h1M30 48.5h2M33 48.5h1M36 48.5h1M38 48.5h1M40 48.5h2M48 48.5h1M1 49.5h3M5 49.5h2M10 49.5h8M19 49.5h1M25 49.5h2M29 49.5h2M33 49.5h4M38 49.5h1M40 49.5h1M42 49.5h1M47 49.5h3M1 50.5h1M5 50.5h1M7 50.5h1M9 50.5h2M19 50.5h2M24 50.5h2M27 50.5h3M31 50.5h3M38 50.5h1M40 50.5h1M42 50.5h2M46 50.5h2M50 50.5h1M1 51.5h2M4 51.5h2M7 51.5h1M9 51.5h1M11 51.5h1M18 51.5h2M21 51.5h1M23 51.5h2M27 51.5h1M31 51.5h1M34 51.5h1M37 51.5h2M40 51.5h1M42 51.5h1M44 51.5h3M48 51.5h4M4 52.5h1M7 52.5h1M9 52.5h1M11 52.5h2M17 52.5h2M21 52.5h1M23 52.5h1M25 52.5h4M30 52.5h8M40 52.5h1M42 52.5h1M44 52.5h1M48 52.5h1M52 52.5h1M3 53.5h5M9 53.5h1M11 53.5h1M13 53.5h1M16 53.5h2M19 53.5h3M23 53.5h1M25 53.5h1M30 53.5h1M38 53.5h3M42 53.5h1M44 53.5h2M47 53.5h3M51 53.5h3M1 54.5h3M9 54.5h1M11 54.5h1M13 54.5h4M19 54.5h1M23 54.5h1M25 54.5h2M29 54.5h3M37 54.5h2M42 54.5h1M44 54.5h1M47 54.5h1M51 54.5h1M54 54.5h1M1 55.5h1M4 55.5h1M8 55.5h2M11 55.5h1M13 55.5h1M17 55.5h4M22 55.5h2M25 55.5h1M27 55.5h3M32 55.5h1M36 55.5h2M39 55.5h1M41 55.5h2M44 55.5h5M50 55.5h6"/><path class="automaton__key" d="M0 0.5h0.84M0 1.5h0.84M0 3.5h0.84M0 4.5h0.84M0 5.5h0.84M0 8.5h0.84M0 9.5h0.84M0 13.5h0.84M0 15.5h0.84M0 16.5h0.84M0 19.5h0.84M0 22.5h0.84M0 23.5h0.84M0 24.5h0.84M0 26.5h0.84M0 28.5h0.84M0 29.5h0.84M0 30.5h0.84M0 33.5h0.84M0 34.5h0.84M0 35.5h0.84M0 37.5h0.84M0 39.5h0.84M0 41.5h0.84M0 42.5h0.84M0 47.5h0.84M0 48.5h0.84M0 51.5h0.84M0 53.5h0.84M0 55.5h0.84"/></svg>
-              <figcaption>Rule 30, grown from a single cell. The highlighted centre column looks random, which is why cellular automata interest cryptographers.</figcaption>
+            <figure class="hero__photo">
+              <!-- À compléter : remplace par ta photo (portrait, format 4:5 idéalement), ex. src="assets/photo.jpg" -->
+              <img src="assets/photo-placeholder.svg" width="400" height="500" alt="Portrait of Lucas Poidevin">
             </figure>
-          </div>
-
-          <div class="about">
-            <figure class="about__photo">
-              <!-- À compléter : remplace par ta photo (ex. assets/photo.jpg, format portrait 4:5) -->
-              <img src="assets/photo-placeholder.svg" width="400" height="500" alt="Portrait of Lucas Poidevin" loading="lazy">
-            </figure>
-
-            <div class="about__body">
-              <h2 class="about__title">About me</h2>
-              <p>I’m an engineering student at ENSEEIHT, in the Electronics, Electrical Energy and Automation department. My interests are robotics, new technologies and electronics.</p>
-              <p>So far my projects include a TIPE on cellular automata and cryptography, and my involvement in 7Robot, the robotics club of the school.</p>
-              <p><span class="todo">À compléter : 2 ou 3 phrases sur ce que tu cherches (stage, mobilité, projet) et ce qui te motive</span></p>
-
-              <dl class="facts">
-                <dt>School</dt>
-                <dd>ENSEEIHT, Toulouse INP (N7)</dd>
-                <dt>Interests</dt>
-                <dd>Robotics, new technologies, electronics</dd>
-                <dt>Club</dt>
-                <dd><a href="#course" data-band="2">7Robot</a></dd>
-                <dt>Sport</dt>
-                <dd><a href="#sport" data-band="5">Volleyball and calisthenics</a></dd>
-                <dt>Engagement</dt>
-                <dd><a href="#civic" data-band="4">CNU and Futurs Proches</a></dd>
-                <dt>Looking for</dt>
-                <dd><span class="todo">À compléter : stage, mobilité, projet…</span></dd>
-              </dl>
-            </div>
           </div>
         </section>
 
@@ -107,25 +83,17 @@
         <section id="course" class="domain" data-band="2" aria-labelledby="course-title">
           <header class="domain__head">
             <h2 id="course-title">Engineering course</h2>
-            <p class="domain__lead">Projects, productions, skills and the curriculum behind them.</p>
+            <p class="domain__lead">My projects and the skills I use.</p>
           </header>
 
-          <!--
-            SOUS-ONGLETS : les 4 <input>, les 4 <label> et les 4 <div class="tabs__panel"> doivent
-            être dans le même ordre (le 1er input affiche le 1er label et le 1er panneau, etc.).
-            Maximum 6 onglets par domaine.
-          -->
+          <!-- Sous-onglets : les <input>, les <label> et les panneaux sont dans le même ordre. -->
           <div class="tabs">
             <input type="radio" name="tabs-course" id="course-projects" checked>
-            <input type="radio" name="tabs-course" id="course-productions">
             <input type="radio" name="tabs-course" id="course-skills">
-            <input type="radio" name="tabs-course" id="course-curriculum">
 
             <div class="tabs__bar">
               <label for="course-projects">Projects</label>
-              <label for="course-productions">Productions</label>
               <label for="course-skills">Skills</label>
-              <label for="course-curriculum">Curriculum</label>
             </div>
 
             <div class="tabs__panels">
@@ -134,92 +102,34 @@
               <div class="tabs__panel">
                 <h3 class="panel__title">Projects</h3>
 
-                <article class="entry">
-                  <div class="entry__meta">
-                    <p class="entry__kind">TIPE</p>
-                    <p><span class="todo">À compléter : année</span></p>
-                  </div>
+                <article class="entry entry--photo">
+                  <figure class="entry__photo">
+                    <!-- À compléter : photo ou schéma du TIPE -->
+                    <img src="assets/photo-projet.svg" width="400" height="300" alt="Photo of my TIPE project" loading="lazy">
+                  </figure>
                   <div class="entry__body">
+                    <p class="entry__meta"><span class="entry__kind">TIPE</span> <span class="todo">année</span></p>
                     <h4 class="entry__title">Cellular automata and cryptography</h4>
-                    <p>A cellular automaton is a grid of cells that all update at once, each following the same simple rule applied to its neighbours. Despite that simplicity, some rules produce patterns that look random, which is what makes them interesting for cryptography.</p>
-                    <dl class="spec">
-                      <dt>Subject</dt>
-                      <dd>Cellular automata and cryptography</dd>
-                      <dt>Question</dt>
-                      <dd><span class="todo">À compléter : ta problématique</span></dd>
-                      <dt>Approach</dt>
-                      <dd><span class="todo">À compléter : méthode, outils, simulations</span></dd>
-                      <dt>Result</dt>
-                      <dd><span class="todo">À compléter : résultats et ce que tu en retiens</span></dd>
-                    </dl>
-                    <ul class="tags">
-                      <li>Cellular automata</li>
-                      <li>Cryptography</li>
-                    </ul>
-                    <p class="entry__links"><span class="todo">À compléter : lien vers ton rapport, ton code ou ta présentation</span></p>
+                    <p>A cellular automaton is a grid of cells that all update at once, each following the same simple rule. Some rules produce patterns that look random, which is what makes them interesting for cryptography.</p>
+                    <p><span class="todo">À compléter : ta problématique et ce que tu as obtenu, en 2 ou 3 phrases</span></p>
                   </div>
                 </article>
 
-                <article class="entry">
-                  <div class="entry__meta">
-                    <p class="entry__kind">Student club</p>
-                    <p><span class="todo">À compléter : depuis quand</span></p>
-                  </div>
+                <article class="entry entry--photo">
+                  <figure class="entry__photo">
+                    <!-- À compléter : photo du robot ou du club -->
+                    <img src="assets/photo-projet.svg" width="400" height="300" alt="Photo of 7Robot" loading="lazy">
+                  </figure>
                   <div class="entry__body">
+                    <p class="entry__meta"><span class="entry__kind">Student club</span> <span class="todo">depuis quand</span></p>
                     <h4 class="entry__title">7Robot, the robotics club of ENSEEIHT</h4>
-                    <p>7Robot is the robotics club of ENSEEIHT (N7), and I’m involved in it.</p>
-                    <dl class="spec">
-                      <dt>Role</dt>
-                      <dd><span class="todo">À compléter : ton rôle dans le club</span></dd>
-                      <dt>Project</dt>
-                      <dd><span class="todo">À compléter : le robot ou le projet sur lequel tu travailles</span></dd>
-                      <dt>Skills</dt>
-                      <dd><span class="todo">À compléter : ce que tu y apprends ou y apportes</span></dd>
-                      <dt>Highlights</dt>
-                      <dd><span class="todo">À compléter : événements, compétitions, résultats</span></dd>
-                    </dl>
-                    <ul class="tags">
-                      <li>Robotics</li>
-                      <li>Student club</li>
-                    </ul>
+                    <p>I’m involved in 7Robot, the robotics club of the school.</p>
+                    <p><span class="todo">À compléter : ton rôle et le robot ou projet sur lequel tu travailles</span></p>
                     <p class="entry__links"><a href="https://www.7robot.fr/" target="_blank" rel="noopener">7Robot website</a></p>
                   </div>
                 </article>
 
-                <!-- Pour ajouter un projet : copie un bloc <article class="entry"> ci-dessus et remplace son contenu. -->
-                <div class="slot">
-                  <p class="slot__flag">À compléter</p>
-                  <p class="slot__title">Un autre projet</p>
-                  <p class="slot__hint">Projet de cours, projet personnel, concours… Copie un bloc « entry » ci-dessus pour le décrire.</p>
-                </div>
-              </div>
-
-              <!-- ---------- Productions ---------- -->
-              <div class="tabs__panel">
-                <h3 class="panel__title">Productions</h3>
-                <p class="panel__intro">What I have made and can show: reports, posters, code, videos.</p>
-                <div class="slots">
-                  <div class="slot">
-                    <p class="slot__flag">À compléter</p>
-                    <p class="slot__title">Rapport</p>
-                    <p class="slot__hint">Lien vers un PDF placé dans le dossier assets/, ou vers un document en ligne.</p>
-                  </div>
-                  <div class="slot">
-                    <p class="slot__flag">À compléter</p>
-                    <p class="slot__title">Diaporama ou poster</p>
-                    <p class="slot__hint">La présentation d’un projet, avec un lien ou une image.</p>
-                  </div>
-                  <div class="slot">
-                    <p class="slot__flag">À compléter</p>
-                    <p class="slot__title">Code</p>
-                    <p class="slot__hint">Lien vers le dépôt GitHub, avec une phrase pour dire ce qu’il fait.</p>
-                  </div>
-                  <div class="slot">
-                    <p class="slot__flag">À compléter</p>
-                    <p class="slot__title">Vidéo ou photos</p>
-                    <p class="slot__hint">Une courte démo, ou quelques photos du résultat (robot, montage, schéma…).</p>
-                  </div>
-                </div>
+                <!-- Pour ajouter un projet : copie un bloc <article>...</article> ci-dessus et colle-le ici. -->
               </div>
 
               <!-- ---------- Skills ---------- -->
@@ -232,7 +142,6 @@
                       <ul class="chips">
                         <li>Python</li>
                         <li>C</li>
-                        <li class="chips__add">À compléter : autre langage ?</li>
                       </ul>
                     </dd>
                   </div>
@@ -241,7 +150,6 @@
                     <dd>
                       <ul class="chips">
                         <li>SolidWorks</li>
-                        <li class="chips__add">À compléter : autre logiciel ?</li>
                       </ul>
                     </dd>
                   </div>
@@ -251,50 +159,11 @@
                       <ul class="chips">
                         <li>ChatGPT</li>
                         <li>Claude</li>
-                      </ul>
-                    </dd>
-                  </div>
-                  <div class="skills__row">
-                    <dt>Electronics &amp; embedded</dt>
-                    <dd>
-                      <ul class="chips">
-                        <li class="chips__add">À compléter : logiciels, cartes, instruments de mesure…</li>
-                      </ul>
-                    </dd>
-                  </div>
-                  <div class="skills__row">
-                    <dt>Soft skills</dt>
-                    <dd>
-                      <ul class="chips">
-                        <li class="chips__add">À compléter : travail d’équipe, gestion de projet…</li>
+                        <li class="chips__add">À compléter : autres compétences ?</li>
                       </ul>
                     </dd>
                   </div>
                 </dl>
-              </div>
-
-              <!-- ---------- Curriculum ---------- -->
-              <div class="tabs__panel">
-                <h3 class="panel__title">Curriculum</h3>
-                <p class="panel__intro">The 3EA department of ENSEEIHT trains engineers in electronics, electrical energy and automatic control, including power electronics, analogue and digital electronics, and computing.</p>
-                <ol class="timeline">
-                  <li>
-                    <h4 class="timeline__title">Before ENSEEIHT</h4>
-                    <p><span class="todo">À compléter : bac, classes préparatoires, concours…</span></p>
-                  </li>
-                  <li>
-                    <h4 class="timeline__title">1st year</h4>
-                    <p><span class="todo">À compléter : matières marquantes, projets, moments forts</span></p>
-                  </li>
-                  <li>
-                    <h4 class="timeline__title">2nd year</h4>
-                    <p><span class="todo">À compléter : matières marquantes, projets, moments forts</span></p>
-                  </li>
-                  <li>
-                    <h4 class="timeline__title">3rd year</h4>
-                    <p><span class="todo">À compléter : spécialisation, projet de fin d’études</span></p>
-                  </li>
-                </ol>
               </div>
 
             </div>
@@ -306,111 +175,28 @@
         <section id="mobility" class="domain" data-band="3" aria-labelledby="mobility-title">
           <header class="domain__head">
             <h2 id="mobility-title">International Mobility</h2>
-            <p class="domain__lead">Languages and time abroad: PCE, English, a second language and my plans.</p>
+            <p class="domain__lead">My language levels and my mobility project.</p>
           </header>
 
-          <div class="tabs">
-            <input type="radio" name="tabs-mobility" id="mobility-pce" checked>
-            <input type="radio" name="tabs-mobility" id="mobility-english">
-            <input type="radio" name="tabs-mobility" id="mobility-lv2">
-            <input type="radio" name="tabs-mobility" id="mobility-plans">
-
-            <div class="tabs__bar">
-              <label for="mobility-pce">PCE</label>
-              <label for="mobility-english">English (LV1)</label>
-              <label for="mobility-lv2">LV2</label>
-              <label for="mobility-plans">Mobility plans</label>
+          <div class="levels">
+            <div class="level">
+              <h3 class="level__label">English</h3>
+              <p class="level__value"><span class="todo">À compléter : niveau (ex. C1, score TOEIC)</span></p>
             </div>
-
-            <div class="tabs__panels">
-
-              <div class="tabs__panel">
-                <h3 class="panel__title">PCE</h3>
-                <article class="entry">
-                  <div class="entry__meta">
-                    <p class="entry__kind">PCE</p>
-                    <p><span class="todo">À compléter : dates</span></p>
-                  </div>
-                  <div class="entry__body">
-                    <h4 class="entry__title"><span class="todo">À compléter : intitulé complet de la PCE</span></h4>
-                    <dl class="spec">
-                      <dt>What it is</dt>
-                      <dd><span class="todo">À compléter : en une phrase</span></dd>
-                      <dt>Where</dt>
-                      <dd><span class="todo">À compléter : lieu, structure</span></dd>
-                      <dt>What I did</dt>
-                      <dd><span class="todo">À compléter : missions, activités</span></dd>
-                      <dt>What I learned</dt>
-                      <dd><span class="todo">À compléter : culture, langue, autonomie…</span></dd>
-                    </dl>
-                    <p class="entry__links"><span class="todo">À compléter : photos, rapport ou attestation</span></p>
-                  </div>
-                </article>
-              </div>
-
-              <div class="tabs__panel">
-                <h3 class="panel__title">English (LV1)</h3>
-                <article class="entry">
-                  <div class="entry__meta">
-                    <p class="entry__kind">Language</p>
-                  </div>
-                  <div class="entry__body">
-                    <h4 class="entry__title">English</h4>
-                    <dl class="spec">
-                      <dt>Level</dt>
-                      <dd><span class="todo">À compléter : niveau (échelle CECRL)</span></dd>
-                      <dt>TOEIC</dt>
-                      <dd><span class="todo">À compléter : score et date</span></dd>
-                      <dt>In practice</dt>
-                      <dd><span class="todo">À compléter : cours, séjours, projets en anglais</span></dd>
-                    </dl>
-                  </div>
-                </article>
-              </div>
-
-              <div class="tabs__panel">
-                <h3 class="panel__title">LV2</h3>
-                <article class="entry">
-                  <div class="entry__meta">
-                    <p class="entry__kind">Language</p>
-                  </div>
-                  <div class="entry__body">
-                    <h4 class="entry__title"><span class="todo">À compléter : ta LV2</span></h4>
-                    <dl class="spec">
-                      <dt>Level</dt>
-                      <dd><span class="todo">À compléter : niveau</span></dd>
-                      <dt>Why this language</dt>
-                      <dd><span class="todo">À compléter : ta motivation</span></dd>
-                      <dt>In practice</dt>
-                      <dd><span class="todo">À compléter : cours, séjours, échanges</span></dd>
-                    </dl>
-                  </div>
-                </article>
-              </div>
-
-              <div class="tabs__panel">
-                <h3 class="panel__title">Mobility plans</h3>
-                <p class="panel__intro">International mobility is a required part of the ENSEEIHT degree.</p>
-                <article class="entry">
-                  <div class="entry__meta">
-                    <p class="entry__kind">Plan</p>
-                    <p><span class="todo">À compléter : période</span></p>
-                  </div>
-                  <div class="entry__body">
-                    <dl class="spec">
-                      <dt>Type</dt>
-                      <dd><span class="todo">À compléter : semestre d’études, stage à l’étranger, année de césure ou projet humanitaire</span></dd>
-                      <dt>Destination</dt>
-                      <dd><span class="todo">À compléter : pays, université ou entreprise visés</span></dd>
-                      <dt>Why</dt>
-                      <dd><span class="todo">À compléter : ce que tu veux y apprendre</span></dd>
-                    </dl>
-                  </div>
-                </article>
-              </div>
-
+            <div class="level">
+              <h3 class="level__label">Japanese (second language)</h3>
+              <p class="level__value"><span class="todo">À compléter : niveau</span></p>
             </div>
           </div>
+
+          <article class="entry">
+            <div class="entry__body">
+              <p class="entry__meta"><span class="entry__kind">Mobility project</span> <span class="todo">période</span></p>
+              <h3 class="entry__title">Studying or working abroad</h3>
+              <p>International mobility is part of the ENSEEIHT degree: a semester at a partner university, an internship abroad, or a gap year.</p>
+              <p><span class="todo">À compléter : ton projet (pays, type de mobilité, ce que tu veux y apprendre)</span></p>
+            </div>
+          </article>
         </section>
 
 
@@ -421,72 +207,33 @@
             <p class="domain__lead">Commitments beyond the classroom.</p>
           </header>
 
-          <div class="tabs">
-            <input type="radio" name="tabs-civic" id="civic-cnu" checked>
-            <input type="radio" name="tabs-civic" id="civic-futurs">
-            <input type="radio" name="tabs-civic" id="civic-other">
-
-            <div class="tabs__bar">
-              <label for="civic-cnu">CNU</label>
-              <label for="civic-futurs">Futurs Proches</label>
-              <label for="civic-other">Other commitments</label>
+          <article class="entry entry--photo">
+            <figure class="entry__photo">
+              <!-- À compléter : photo du CNU -->
+              <img src="assets/photo-projet.svg" width="400" height="300" alt="Photo of my CNU commitment" loading="lazy">
+            </figure>
+            <div class="entry__body">
+              <p class="entry__meta"><span class="entry__kind">Commitment</span> <span class="todo">période</span></p>
+              <h3 class="entry__title">CNU</h3>
+              <p><span class="todo">À compléter : développe le sigle, explique en une ou deux phrases ce que c’est et ton rôle</span></p>
             </div>
+          </article>
 
-            <div class="tabs__panels">
-
-              <div class="tabs__panel">
-                <h3 class="panel__title">CNU</h3>
-                <article class="entry">
-                  <div class="entry__meta">
-                    <p class="entry__kind">Commitment</p>
-                    <p><span class="todo">À compléter : période</span></p>
-                  </div>
-                  <div class="entry__body">
-                    <h4 class="entry__title">CNU</h4>
-                    <dl class="spec">
-                      <dt>What it is</dt>
-                      <dd><span class="todo">À compléter : développe le sigle et explique en une phrase</span></dd>
-                      <dt>My role</dt>
-                      <dd><span class="todo">À compléter : ce que tu y fais</span></dd>
-                      <dt>What I learned</dt>
-                      <dd><span class="todo">À compléter : compétences, rencontres, prise de recul</span></dd>
-                    </dl>
-                  </div>
-                </article>
-              </div>
-
-              <div class="tabs__panel">
-                <h3 class="panel__title">Futurs Proches</h3>
-                <article class="entry">
-                  <div class="entry__meta">
-                    <p class="entry__kind">Festival</p>
-                    <p><span class="todo">À compléter : date de l’édition</span></p>
-                  </div>
-                  <div class="entry__body">
-                    <h4 class="entry__title">Futurs Proches</h4>
-                    <p>Futurs Proches is the festival of campuses in transition, organised by the Université de Toulouse and its partner institutions. Students and staff come together around ecological and societal transitions through conferences, workshops and interactive stands.</p>
-                    <dl class="spec">
-                      <dt>What I did</dt>
-                      <dd><span class="todo">À compléter : ateliers, conférences, stands, bénévolat…</span></dd>
-                      <dt>What I took away</dt>
-                      <dd><span class="todo">À compléter : ce qui t’a marqué</span></dd>
-                    </dl>
-                    <p class="entry__links"><a href="https://futurs-proches.univ-toulouse.fr" target="_blank" rel="noopener">Festival website</a></p>
-                  </div>
-                </article>
-              </div>
-
-              <div class="tabs__panel">
-                <h3 class="panel__title">Other commitments</h3>
-                <div class="slot">
-                  <p class="slot__flag">À compléter</p>
-                  <p class="slot__title">Un autre engagement</p>
-                  <p class="slot__hint">Association, bénévolat, mandat d’élu, tutorat… Copie un bloc « entry » du premier onglet pour le décrire.</p>
-                </div>
-              </div>
-
+          <article class="entry entry--photo">
+            <figure class="entry__photo">
+              <!-- À compléter : photo de Futurs Proches -->
+              <img src="assets/photo-projet.svg" width="400" height="300" alt="Photo of the Futurs Proches festival" loading="lazy">
+            </figure>
+            <div class="entry__body">
+              <p class="entry__meta"><span class="entry__kind">Festival</span> <span class="todo">édition</span></p>
+              <h3 class="entry__title">Futurs Proches</h3>
+              <p>Futurs Proches is the festival of campuses in transition, organised by the Université de Toulouse and its partners, with conferences, workshops and stands on ecological and societal transitions.</p>
+              <p><span class="todo">À compléter : ce que tu y as fait ou retenu</span></p>
+              <p class="entry__links"><a href="https://futurs-proches.univ-toulouse.fr" target="_blank" rel="noopener">Festival website</a></p>
             </div>
-          </div>
+          </article>
+
+          <!-- Pour ajouter un engagement : copie un bloc <article>...</article> ci-dessus et colle-le ici. -->
         </section>
 
 
@@ -494,77 +241,35 @@
         <section id="sport" class="domain" data-band="5" aria-labelledby="sport-title">
           <header class="domain__head">
             <h2 id="sport-title">Sport &amp; other activities</h2>
-            <p class="domain__lead">How I stay active, and what I do outside engineering.</p>
+            <p class="domain__lead">What I do outside engineering.</p>
           </header>
 
-          <div class="tabs">
-            <input type="radio" name="tabs-sport" id="sport-volley" checked>
-            <input type="radio" name="tabs-sport" id="sport-calisthenics">
-            <input type="radio" name="tabs-sport" id="sport-other">
-
-            <div class="tabs__bar">
-              <label for="sport-volley">Volleyball</label>
-              <label for="sport-calisthenics">Calisthenics</label>
-              <label for="sport-other">Other activities</label>
+          <article class="entry entry--photo">
+            <figure class="entry__photo">
+              <!-- À compléter : photo de volley -->
+              <img src="assets/photo-projet.svg" width="400" height="300" alt="Photo of me playing volleyball" loading="lazy">
+            </figure>
+            <div class="entry__body">
+              <p class="entry__meta"><span class="entry__kind">Team sport</span></p>
+              <h3 class="entry__title">Volleyball</h3>
+              <p><span class="todo">À compléter : ton club ou ton équipe, depuis quand, un souvenir marquant</span></p>
             </div>
+          </article>
 
-            <div class="tabs__panels">
-
-              <div class="tabs__panel">
-                <h3 class="panel__title">Volleyball</h3>
-                <article class="entry">
-                  <div class="entry__meta">
-                    <p class="entry__kind">Team sport</p>
-                    <p><span class="todo">À compléter : depuis quand</span></p>
-                  </div>
-                  <div class="entry__body">
-                    <h4 class="entry__title">Volleyball</h4>
-                    <p>Volleyball is a team sport where every point depends on communication and trust between players.</p>
-                    <dl class="spec">
-                      <dt>Team or club</dt>
-                      <dd><span class="todo">À compléter : club, équipe, association sportive</span></dd>
-                      <dt>Level</dt>
-                      <dd><span class="todo">À compléter : niveau, poste</span></dd>
-                      <dt>Highlights</dt>
-                      <dd><span class="todo">À compléter : tournois, résultats, souvenirs</span></dd>
-                    </dl>
-                  </div>
-                </article>
-              </div>
-
-              <div class="tabs__panel">
-                <h3 class="panel__title">Calisthenics</h3>
-                <article class="entry">
-                  <div class="entry__meta">
-                    <p class="entry__kind">Training</p>
-                    <p><span class="todo">À compléter : depuis quand</span></p>
-                  </div>
-                  <div class="entry__body">
-                    <h4 class="entry__title">Calisthenics</h4>
-                    <p>Calisthenics is strength training that uses only your own body weight, from pull-ups to handstands.</p>
-                    <dl class="spec">
-                      <dt>Routine</dt>
-                      <dd><span class="todo">À compléter : fréquence, lieu</span></dd>
-                      <dt>Current goals</dt>
-                      <dd><span class="todo">À compléter : figures ou objectifs que tu travailles</span></dd>
-                      <dt>What it brings me</dt>
-                      <dd><span class="todo">À compléter : discipline, persévérance…</span></dd>
-                    </dl>
-                  </div>
-                </article>
-              </div>
-
-              <div class="tabs__panel">
-                <h3 class="panel__title">Other activities</h3>
-                <div class="slot">
-                  <p class="slot__flag">À compléter</p>
-                  <p class="slot__title">Une autre activité</p>
-                  <p class="slot__hint">Musique, photo, associations, loisirs… Copie un bloc « entry » du premier onglet pour la décrire.</p>
-                </div>
-              </div>
-
+          <article class="entry entry--photo">
+            <figure class="entry__photo">
+              <!-- À compléter : photo de calisthénie -->
+              <img src="assets/photo-projet.svg" width="400" height="300" alt="Photo of me doing calisthenics" loading="lazy">
+            </figure>
+            <div class="entry__body">
+              <p class="entry__meta"><span class="entry__kind">Training</span></p>
+              <h3 class="entry__title">Calisthenics</h3>
+              <p>Strength training that uses only your own body weight, from pull-ups to handstands.</p>
+              <p><span class="todo">À compléter : depuis quand, tes objectifs du moment</span></p>
             </div>
-          </div>
+          </article>
+
+          <!-- Pour ajouter un loisir ou une activité : copie un bloc <article>...</article> ci-dessus et colle-le ici. -->
         </section>
 
 
@@ -572,139 +277,30 @@
         <section id="career" class="domain" data-band="6" aria-labelledby="career-title">
           <header class="domain__head">
             <h2 id="career-title">Career Development</h2>
-            <p class="domain__lead">Internships, PEP, my professional project and documents.</p>
+            <p class="domain__lead">My CV and my professional experience.</p>
           </header>
 
-          <div class="tabs">
-            <input type="radio" name="tabs-career" id="career-internships" checked>
-            <input type="radio" name="tabs-career" id="career-pep">
-            <input type="radio" name="tabs-career" id="career-project">
-            <input type="radio" name="tabs-career" id="career-docs">
-
-            <div class="tabs__bar">
-              <label for="career-internships">Internships</label>
-              <label for="career-pep">PEP</label>
-              <label for="career-project">Professional project</label>
-              <label for="career-docs">CV &amp; documents</label>
-            </div>
-
-            <div class="tabs__panels">
-
-              <div class="tabs__panel">
-                <h3 class="panel__title">Internships</h3>
-                <p class="panel__intro">The ENSEEIHT engineering cycle includes an internship at the end of the first year, another at the end of the second, and a final-year project (PFE) in industry or research.</p>
-
-                <article class="entry">
-                  <div class="entry__meta">
-                    <p class="entry__kind">Internship</p>
-                    <p><span class="todo">À compléter : dates</span></p>
-                  </div>
-                  <div class="entry__body">
-                    <h4 class="entry__title">First-year internship</h4>
-                    <dl class="spec">
-                      <dt>Company</dt>
-                      <dd><span class="todo">À compléter : entreprise ou laboratoire, ville</span></dd>
-                      <dt>Mission</dt>
-                      <dd><span class="todo">À compléter : ce que tu as fait</span></dd>
-                      <dt>Skills</dt>
-                      <dd><span class="todo">À compléter : ce que tu as appris</span></dd>
-                    </dl>
-                  </div>
-                </article>
-
-                <article class="entry">
-                  <div class="entry__meta">
-                    <p class="entry__kind">Internship</p>
-                    <p><span class="todo">À compléter : dates</span></p>
-                  </div>
-                  <div class="entry__body">
-                    <h4 class="entry__title">Second-year internship</h4>
-                    <dl class="spec">
-                      <dt>Company</dt>
-                      <dd><span class="todo">À compléter : entreprise ou laboratoire, ville</span></dd>
-                      <dt>Mission</dt>
-                      <dd><span class="todo">À compléter : ce que tu as fait</span></dd>
-                      <dt>Skills</dt>
-                      <dd><span class="todo">À compléter : ce que tu as appris</span></dd>
-                    </dl>
-                  </div>
-                </article>
-
-                <article class="entry">
-                  <div class="entry__meta">
-                    <p class="entry__kind">Final project</p>
-                    <p><span class="todo">À compléter : dates</span></p>
-                  </div>
-                  <div class="entry__body">
-                    <h4 class="entry__title">Final-year project (PFE)</h4>
-                    <dl class="spec">
-                      <dt>Company</dt>
-                      <dd><span class="todo">À compléter : entreprise ou laboratoire, ville</span></dd>
-                      <dt>Mission</dt>
-                      <dd><span class="todo">À compléter : sujet et objectifs</span></dd>
-                    </dl>
-                  </div>
-                </article>
-              </div>
-
-              <div class="tabs__panel">
-                <h3 class="panel__title">PEP</h3>
-                <article class="entry">
-                  <div class="entry__meta">
-                    <p class="entry__kind">PEP</p>
-                    <p><span class="todo">À compléter : période</span></p>
-                  </div>
-                  <div class="entry__body">
-                    <h4 class="entry__title"><span class="todo">À compléter : intitulé complet du PEP</span></h4>
-                    <dl class="spec">
-                      <dt>What it is</dt>
-                      <dd><span class="todo">À compléter : en une phrase</span></dd>
-                      <dt>What I did</dt>
-                      <dd><span class="todo">À compléter : démarches, rencontres, travaux</span></dd>
-                      <dt>What I learned</dt>
-                      <dd><span class="todo">À compléter : ce que tu en retiens</span></dd>
-                    </dl>
-                  </div>
-                </article>
-              </div>
-
-              <div class="tabs__panel">
-                <h3 class="panel__title">Professional project</h3>
-                <article class="entry">
-                  <div class="entry__meta">
-                    <p class="entry__kind">Goal</p>
-                  </div>
-                  <div class="entry__body">
-                    <dl class="spec spec--first">
-                      <dt>Fields</dt>
-                      <dd><span class="todo">À compléter : secteurs visés (robotique, systèmes embarqués, énergie…)</span></dd>
-                      <dt>Roles</dt>
-                      <dd><span class="todo">À compléter : métiers qui t’attirent</span></dd>
-                      <dt>To develop</dt>
-                      <dd><span class="todo">À compléter : compétences à acquérir</span></dd>
-                      <dt>Next steps</dt>
-                      <dd><span class="todo">À compléter : stage, mobilité, formation, rencontres</span></dd>
-                    </dl>
-                  </div>
-                </article>
-              </div>
-
-              <div class="tabs__panel">
-                <h3 class="panel__title">CV &amp; documents</h3>
-                <p class="panel__actions">
-                  <!-- À compléter : dépose ton CV dans assets/ sous le nom CV_Lucas_Poidevin.pdf -->
-                  <a class="btn btn--solid" href="assets/CV_Lucas_Poidevin.pdf">Download my CV (PDF)</a>
-                </p>
-                <p class="panel__note"><span class="todo">À compléter : ajoute ton CV dans le dossier assets/ (CV_Lucas_Poidevin.pdf) et, si tu veux, une version anglaise</span></p>
-                <div class="slot">
-                  <p class="slot__flag">À compléter</p>
-                  <p class="slot__title">Autres documents</p>
-                  <p class="slot__hint">Lettre de motivation type, attestations, lettres de recommandation, certificats (TOEIC, etc.).</p>
-                </div>
-              </div>
-
-            </div>
+          <div class="docs">
+            <h3 class="subhead">CV &amp; documents</h3>
+            <!-- À compléter : dépose ton CV dans assets/ sous le nom CV_Lucas_Poidevin.pdf -->
+            <p><a class="btn btn--solid" href="assets/CV_Lucas_Poidevin.pdf">Download my CV (PDF)</a></p>
+            <ul class="doclist">
+              <!-- Un autre document : <li><a href="assets/lettre-motivation.pdf">Cover letter</a></li> -->
+              <li><span class="todo">À compléter : autres documents (lettre de motivation, attestations, certificats…)</span></li>
+            </ul>
           </div>
+
+          <h3 class="subhead">Internships</h3>
+
+          <article class="entry">
+            <div class="entry__body">
+              <p class="entry__meta"><span class="entry__kind">Internship</span> <span class="todo">dates</span></p>
+              <h4 class="entry__title"><span class="todo">À compléter : entreprise ou laboratoire, ville</span></h4>
+              <p><span class="todo">À compléter : ce que tu y as fait et appris, en 2 ou 3 phrases</span></p>
+            </div>
+          </article>
+
+          <!-- Pour ajouter un stage : copie le bloc <article>...</article> ci-dessus et colle-le ici. -->
         </section>
 
 
