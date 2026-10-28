@@ -8,7 +8,7 @@
      3  Base
      4  Mise en page générale
      5  Navigation
-     6  Welcome (hero + à propos)
+     6  Welcome (présentation + photo)
      7  En-têtes de domaine
      8  Sous-onglets
      9  Fiches, listes et composants
@@ -19,7 +19,7 @@
    ========================================================================== */
 
 
-/* 1 Police : Archivo (variable : graisse + largeur), hébergée dans assets/fonts */
+/* 1 Police : si le fichier de police n'est pas présent, le site utilise Helvetica / Arial (aucun souci) */
 @font-face {
   font-family: "Archivo Variable";
   font-style: normal;
@@ -376,8 +376,8 @@ body:has(#contact:target) .site-nav a[href="#contact"] {
 /* 6 Welcome --------------------------------------------------------------- */
 .hero {
   display: grid;
-  gap: 3rem 2.5rem;
-  align-items: end;
+  gap: 2.5rem;
+  align-items: center;
 }
 
 .hero__text {
@@ -412,7 +412,7 @@ body:has(#contact:target) .site-nav a[href="#contact"] {
 
 .hero__lead {
   max-inline-size: 32rem;
-  margin-block-start: 1.5rem;
+  margin-block-start: 1.25rem;
   color: var(--ink-2);
 }
 
@@ -423,25 +423,37 @@ body:has(#contact:target) .site-nav a[href="#contact"] {
   margin-block-start: 2rem;
 }
 
-.hero__figure {
-  max-inline-size: 28rem;
+/* Ta photo : format portrait 4:5, recadrée automatiquement */
+.hero__photo {
+  inline-size: min(100%, 20rem);
+  aspect-ratio: 4 / 5;
+  background: var(--tint);
+  border: 1px solid var(--line-2);
+  border-radius: 2px;
+  overflow: hidden;
 }
 
-.hero__figure .automaton {
+.hero__photo img {
   display: block;
   inline-size: 100%;
-  block-size: auto;
-  color: color-mix(in srgb, var(--ink) 84%, var(--paper));
+  block-size: 100%;
+  object-fit: cover;
 }
 
-.hero__figure figcaption {
-  margin-block-start: 0.85rem;
-  color: var(--muted);
-  font-size: 0.875rem;
-  line-height: 1.5;
+@media (min-width: 52rem) {
+  .hero {
+    grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
+    gap: 3.5rem;
+  }
+
+  .hero__photo {
+    inline-size: 100%;
+    max-inline-size: 22rem;
+    justify-self: end;
+  }
 }
 
-/* Le dessin : Rule 30, chaque cellule est un petit carré (traits en pointillés) */
+/* Petit logo du menu : Rule 30 (automate cellulaire), un carré par cellule */
 .automaton__cells,
 .automaton__key {
   fill: none;
@@ -455,71 +467,6 @@ body:has(#contact:target) .site-nav a[href="#contact"] {
 
 .automaton__key {
   stroke: var(--c2);
-}
-
-@media (min-width: 52rem) {
-  .hero {
-    grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
-  }
-
-  .hero__figure {
-    justify-self: end;
-  }
-}
-
-.about {
-  display: grid;
-  gap: 2rem;
-  margin-block-start: clamp(3.5rem, 8vw, 6rem);
-}
-
-.about__photo {
-  inline-size: min(100%, 15rem);
-  aspect-ratio: 4 / 5;
-  background: var(--tint);
-  border: 1px solid var(--line-2);
-  border-radius: 2px;
-  overflow: hidden;
-}
-
-.about__photo img {
-  display: block;
-  inline-size: 100%;
-  block-size: 100%;
-  object-fit: cover;
-}
-
-.about__body > * + * {
-  margin-block-start: 1rem;
-}
-
-.about__body p {
-  max-inline-size: var(--measure);
-}
-
-.facts {
-  display: grid;
-  grid-template-columns: max-content minmax(0, 1fr);
-  gap: 0.6rem 1.75rem;
-  margin-block-start: 2rem !important;
-  padding-block-start: 1.5rem;
-  border-top: 1px solid var(--line);
-}
-
-.facts dt {
-  color: var(--muted);
-  font-size: 0.9375rem;
-}
-
-.facts dd {
-  font-weight: 540;
-}
-
-@media (min-width: 44rem) {
-  .about {
-    grid-template-columns: 15rem minmax(0, 1fr);
-    gap: 3rem;
-  }
 }
 
 
@@ -539,18 +486,13 @@ body:has(#contact:target) .site-nav a[href="#contact"] {
   background: var(--band);
 }
 
-.domain h2,
-.about__title {
+.domain h2 {
   font-size: clamp(1.9rem, 4.4vw, 2.75rem);
   font-weight: 720;
   font-stretch: 118%;
   line-height: 1.08;
   letter-spacing: -0.01em;
   text-wrap: balance;
-}
-
-.about__title {
-  font-size: clamp(1.6rem, 3.4vw, 2.1rem);
 }
 
 .domain__lead {
@@ -678,23 +620,60 @@ body:has(#contact:target) .site-nav a[href="#contact"] {
   color: var(--ink);
 }
 
-/* Une fiche : colonne d'infos à gauche (type, dates), contenu à droite */
+.subhead {
+  margin-block-end: 1.25rem;
+  font-size: 1.375rem;
+  font-weight: 700;
+  font-stretch: 112%;
+  line-height: 1.2;
+}
+
+/* Une fiche (projet, activité, stage) : texte seul, ou photo + texte avec « entry--photo » */
 .entry {
   display: grid;
-  gap: 1rem 2.5rem;
+  gap: 1.25rem 2.5rem;
   padding-block: 2rem;
   border-top: 1px solid var(--line);
 }
 
-.entry:first-child {
+.entry:first-of-type {
   padding-block-start: 0;
   border-top: 0;
 }
 
+.entry__photo {
+  inline-size: min(100%, 22rem);
+  aspect-ratio: 4 / 3;
+  background: var(--tint);
+  border: 1px solid var(--line-2);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.entry__photo img {
+  display: block;
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
+}
+
+.entry__body {
+  min-inline-size: 0;
+}
+
+.entry__body > * + * {
+  margin-block-start: 0.85rem;
+}
+
+.entry__body > p {
+  max-inline-size: var(--measure);
+}
+
 .entry__meta {
-  display: grid;
-  align-content: start;
-  gap: 0.4rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem 0.9rem;
   color: var(--muted);
   font-size: 0.9375rem;
 }
@@ -704,18 +683,6 @@ body:has(#contact:target) .site-nav a[href="#contact"] {
   font-weight: 650;
 }
 
-.entry__body {
-  min-inline-size: 0;
-}
-
-.entry__body > p {
-  max-inline-size: var(--measure);
-}
-
-.entry__body > * + * {
-  margin-block-start: 1rem;
-}
-
 .entry__title {
   font-size: 1.4375rem;
   font-weight: 690;
@@ -723,54 +690,63 @@ body:has(#contact:target) .site-nav a[href="#contact"] {
   line-height: 1.2;
 }
 
-.spec {
-  display: grid;
-  grid-template-columns: minmax(6.5rem, max-content) minmax(0, 1fr);
-  gap: 0.6rem 1.5rem;
-  max-inline-size: 44rem;
-  padding-block-start: 1.25rem;
-  border-top: 1px solid var(--line);
-}
-
-.spec--first,
-.entry__body > .spec:first-child {
-  padding-block-start: 0;
-  border-top: 0;
-}
-
-.spec dt {
-  color: var(--muted);
-  font-size: 0.9375rem;
-}
-
-.spec dd {
-  min-inline-size: 0;
-}
-
-.tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.4rem;
-  list-style: none;
-}
-
-.tags li {
-  padding: 0.2rem 0.65rem;
-  background: var(--panel);
-  border: 1px solid var(--line-2);
-  border-radius: 3px;
-  font-size: 0.875rem;
-  font-weight: 540;
-}
-
 .entry__links {
   font-weight: 560;
 }
 
 @media (min-width: 48rem) {
-  .entry {
-    grid-template-columns: 9.5rem minmax(0, 1fr);
+  .entry--photo {
+    grid-template-columns: 16rem minmax(0, 1fr);
   }
+
+  .entry__photo {
+    inline-size: 100%;
+  }
+}
+
+/* Mobilité : les deux niveaux de langue, bien visibles */
+.levels {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  gap: 1.5rem 3rem;
+  max-inline-size: 44rem;
+  margin-block-end: 2.5rem;
+  padding-block-end: 2.5rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.level__label {
+  color: var(--muted);
+  font-size: 0.9375rem;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.level__value {
+  margin-block-start: 0.4rem;
+  font-size: 2.25rem;
+  font-weight: 760;
+  font-stretch: 118%;
+  line-height: 1.15;
+}
+
+/* Carrière : CV et documents en haut de page */
+.docs {
+  max-inline-size: 44rem;
+  margin-block-end: 2.5rem;
+  padding-block-end: 2.5rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.docs > .subhead {
+  margin-block-end: 1rem;
+}
+
+.doclist {
+  display: grid;
+  gap: 0.6rem;
+  margin-block-start: 1.25rem;
+  list-style: none;
 }
 
 /* Compétences */
@@ -825,44 +801,9 @@ body:has(#contact:target) .site-nav a[href="#contact"] {
   }
 }
 
-/* Parcours : ici l'ordre compte, donc une ligne de temps */
-.timeline {
-  display: grid;
-  gap: 1.75rem;
-  margin-block-start: 0.5rem;
-  padding-inline-start: 1.75rem;
-  list-style: none;
-  border-inline-start: 2px solid var(--line-2);
-}
-
-.timeline li {
-  position: relative;
-}
-
-.timeline li::before {
-  content: "";
-  position: absolute;
-  inset-inline-start: calc(-1.75rem - 1px);
-  inset-block-start: 0.4rem;
-  inline-size: 0.8rem;
-  block-size: 0.8rem;
-  background: var(--band);
-  border: 2px solid var(--paper);
-  border-radius: 2px;
-  translate: -50% 0;
-}
-
-.timeline__title {
-  margin-block-end: 0.3rem;
-  font-size: 1.1875rem;
-  font-weight: 680;
-  font-stretch: 106%;
-  line-height: 1.3;
-}
-
 
 /* 10 Emplacements à compléter ---------------------------------------------- */
-/* En pointillés = pas encore rempli. Cherche « À compléter » dans index.html pour tous les retrouver. */
+/* Cadre en pointillés = pas encore rempli. Cherche « À compléter » dans index.html pour tous les retrouver. */
 .todo {
   display: inline-block;
   padding: 0.05rem 0.55rem;
@@ -871,55 +812,9 @@ body:has(#contact:target) .site-nav a[href="#contact"] {
   border: 1.5px dashed color-mix(in srgb, var(--band) 70%, transparent);
   border-radius: 3px;
   font-size: 0.9375rem;
+  font-weight: 400;
+  font-stretch: 100%;
   line-height: 1.5;
-}
-
-.slots {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(14.5rem, 1fr));
-  gap: 1rem;
-}
-
-.slot {
-  padding: 1.25rem 1.35rem 1.35rem;
-  background: color-mix(in srgb, var(--band) 6%, transparent);
-  border: 1.5px dashed color-mix(in srgb, var(--band) 65%, transparent);
-  border-radius: 4px;
-}
-
-.entry + .slot {
-  margin-block-start: 1rem;
-}
-
-.slot__flag {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.45rem;
-  margin-block-end: 0.7rem;
-  color: var(--ink-2);
-  font-size: 0.8125rem;
-  font-weight: 650;
-  line-height: 1.2;
-}
-
-.slot__flag::before {
-  content: "";
-  inline-size: 0.6rem;
-  block-size: 0.6rem;
-  background: var(--band);
-  border-radius: 1px;
-}
-
-.slot__title {
-  font-size: 1.125rem;
-  font-weight: 680;
-  line-height: 1.3;
-}
-
-.slot__hint {
-  margin-block-start: 0.35rem;
-  color: var(--muted);
-  font-size: 0.9375rem;
 }
 
 
@@ -973,27 +868,10 @@ body:has(#contact:target) .site-nav a[href="#contact"] {
 
 
 /* 12 Mouvement ------------------------------------------------------------- */
-/* Un seul moment orchestré : la figure grandit génération par génération.
-   Le reste ne bouge que si tu cliques (changement d'onglet). */
+/* Seul mouvement : l'apparition rapide d'un onglet quand tu cliques dessus. */
 @media (prefers-reduced-motion: no-preference) {
-  .automaton {
-    clip-path: inset(0 0 100% 0);
-    animation: automaton-grow 2.8s steps(56, end) 0.35s forwards;
-  }
-
   .tabs > input:checked ~ .tabs__panels > .tabs__panel {
     animation: panel-in 0.18s ease-out;
-  }
-
-  .brand__mark .automaton__cells,
-  .brand__mark .automaton__key {
-    animation: none;
-  }
-}
-
-@keyframes automaton-grow {
-  to {
-    clip-path: inset(0 0 0 0);
   }
 }
 
@@ -1078,10 +956,5 @@ body:has(#contact:target) .site-nav a[href="#contact"] {
 
   .entry {
     break-inside: avoid;
-  }
-
-  .automaton {
-    clip-path: none;
-    animation: none;
   }
 }
