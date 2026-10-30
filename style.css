@@ -956,6 +956,36 @@ body:has(#contact:target) .site-nav a[href="#contact"] {
     font-weight: 700;
   }
 
+/* Bouton de langue (EN / FR) : lien vers l'autre version du site */
+.lang-switch {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.5rem 0.75rem;
+  color: var(--ink);
+  border: 1.5px solid var(--ink);
+  border-radius: 3px;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-decoration: none;
+}
+
+.lang-switch:hover {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+@media (min-width: 64rem) {
+  .lang-switch {
+    align-self: flex-start;
+    margin-block-start: -1.25rem;
+    margin-inline-start: 1.25rem;
+  }
+}
+
+   
   .entry {
     break-inside: avoid;
   }
