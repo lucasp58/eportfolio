@@ -819,6 +819,94 @@ body:has(#contact:target) .site-nav a[href="#contact"] {
   line-height: 1.5;
 }
 
+/* profils analysés  ---------------------------------------------- */
+.roles-section {
+    background: #f3f3f3;
+    padding: 30px 40px 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1d1d1d;
+  }
+
+  .roles-section h2 {
+    margin: 0 0 28px;
+    font-size: clamp(2rem, 2.7vw, 3.3rem);
+    font-weight: 700;
+    line-height: 1.2;
+    color: #1e1e1e;
+  }
+
+  .roles-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(260px, 1fr));
+    gap: 28px;
+    align-items: stretch;
+  }
+
+  .role-card {
+    background: rgba(255, 255, 255, 0.18);
+    border: 1px solid #dfe2e6;
+    border-radius: 16px;
+    padding: 22px 18px 18px;
+    min-height: 420px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    box-sizing: border-box;
+  }
+
+  .role-title {
+    margin: 0 0 26px;
+    font-size: clamp(1.2rem, 1.8vw, 2.2rem);
+    font-weight: 700;
+    line-height: 1.3;
+    color: #2b6adf;
+    letter-spacing: -0.02em;
+  }
+
+  .role-content {
+    margin-top: 0;
+    flex: 1;
+  }
+
+  .role-label {
+    margin: 0 0 8px;
+    font-size: clamp(1.1rem, 1.6vw, 1.8rem);
+    font-weight: 500;
+    color: #1d1d1d;
+    line-height: 1.35;
+  }
+
+  .role-text {
+    margin: 0;
+    font-size: clamp(1.15rem, 1.6vw, 1.9rem);
+    line-height: 1.45;
+    color: #1d1d1d;
+    font-weight: 400;
+  }
+
+  .mobility-pill {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 52px;
+    padding: 10px 20px;
+    border-radius: 999px;
+    background: #dfeafc;
+    color: #1d5ad7;
+    font-weight: 700;
+    font-size: clamp(1.1rem, 1.5vw, 1.9rem);
+    text-align: center;
+    align-self: center;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  @media (max-width: 980px) {
+    .roles-grid {
+      grid-template-columns: 1fr;
+    }
+  }
 
 /* 11 Contact et pied de page ------------------------------------------------ */
 .contact {
