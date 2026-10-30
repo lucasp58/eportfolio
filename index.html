@@ -11,22 +11,25 @@
   <meta name="theme-color" content="#f3f5f7" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#0f1720" media="(prefers-color-scheme: dark)">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='4' fill='%2315202b'/%3E%3Ccircle cx='12' cy='9' r='4' fill='%23f3f5f7'/%3E%3Cpath d='M4.5 20c0-4 3.4-6.2 7.5-6.2s7.5 2.2 7.5 6.2z' fill='%23f3f5f7'/%3E%3C/svg%3E">
+  <link rel="alternate" hreflang="fr" href="index-fr.html">
   <link rel="stylesheet" href="style.css">
 </head>
- 
+
 <!--
-  PORTFOLIO DE LUCAS POIDEVIN
+  PORTFOLIO DE LUCAS POIDEVIN (version anglaise)
+
+  Cette page a une jumelle en français : index-fr.html.
+  Quand tu modifies un texte ou une photo ici, fais la même modification dans index-fr.html.
 
   Comment t'y retrouver :
   - Ctrl+F sur « À compléter » : tu retrouves tout ce qu'il reste à remplir (cadres en pointillés sur le site).
     Quand tu as rempli un cadre, supprime tout le <span class="todo">...</span> et écris ton texte à la place.
-  - PHOTOS : chaque fiche a une ligne <img src="assets/photo-projet.svg" ...>.
-    Remplace seulement le nom du fichier par celui de ta photo (ex. src="assets/7robot.jpg").
-    Si ta photo est directement à côté de index.html (sans dossier), écris juste src="7robot.jpg".
+  - PHOTOS : chaque fiche a une ligne <img src="..." ...>.
+    Remplace seulement le nom du fichier par celui de ta photo (ex. src="7robot.jpg").
     Pour une fiche sans photo : supprime le bloc <figure class="entry__photo">...</figure>
     ET enlève « entry--photo » de la ligne <article class="entry entry--photo">.
   - AJOUTER UNE FICHE (projet, activité, stage...) : copie un bloc <article>...</article> entier et colle-le juste après.
-  - Les 7 domaines ont chacun leur couleur dans le menu : marron, rouge, orange, jaune, vert, bleu, violet.
+  - Retour à la ligne dans un texte : écris <br> à l'endroit voulu.
 -->
 
 <body>
@@ -37,7 +40,8 @@
     <!-- ===================== NAVIGATION (les 7 mots-clés) ===================== -->
     <header class="site-nav">
       <a class="brand" href="#welcome" aria-label="Lucas Poidevin, back to the top">
-        <span class="brand__mark"><svg  class="mark" viewBox="0 0 24 24" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="8.5" r="4" fill="currentColor"/><path d="M4 20.5c0-4.4 3.6-7 8-7s8 2.6 8 7z" fill="currentColor"/></svg></span>        <span class="brand__name">Lucas Poidevin</span>
+        <span class="brand__mark"><svg class="mark" viewBox="0 0 24 24" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="8.5" r="4" fill="currentColor"/><path d="M4 20.5c0-4.4 3.6-7 8-7s8 2.6 8 7z" fill="currentColor"/></svg></span>
+        <span class="brand__name">Lucas Poidevin</span>
       </a>
       <nav class="site-nav__links" aria-label="Portfolio sections">
         <ul>
@@ -50,6 +54,8 @@
           <li><a href="#contact" data-band="7">Contact</a></li>
         </ul>
       </nav>
+      <!-- Bouton de langue : mène à la version française -->
+      <a class="lang-switch" href="index-fr.html" hreflang="fr" lang="fr" title="Voir le site en français" aria-label="Voir le site en français"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg>FR</a>
     </header>
 
     <div class="content">
@@ -63,7 +69,7 @@
               <p class="hero__role">Engineering student at ENSEEIHT, Toulouse INP</p>
               <p class="hero__track">Electronics, Electrical Energy &amp; Automation (3EA)</p>
               <p class="hero__lead">I’m interested in robotics, new technologies and electronics. Here you will find my engineering course, my projects and the experiences around them.</p>
-              <p class="hero__lead">I am currently seeking a two-month internship in a company for the summer of 2027, from early June to early August. 
+              <p class="hero__lead">I am currently seeking a two-month internship in a company for the summer of 2027, from early June to early August.
                 I am looking for an opportunity to apply my technical skills, gain hands-on industry experience, and further develop my knowledge in a professional environment.</p>
               <p class="hero__actions">
                 <a class="btn btn--solid" href="#course">See my projects</a>
@@ -124,7 +130,7 @@
                     <p class="entry__meta"><span class="entry__kind">Student club</span>2026 - today</p>
                     <h4 class="entry__title">7Robot, the robotics club of ENSEEIHT</h4>
                     <p>I’m involved in 7Robot, the robotics club of the school.</p>
-                    <p>I will be participating in the French Robotics Cup with my robotics club. 
+                    <p>I will be participating in the French Robotics Cup with my robotics club.
                       My role in the team involves working on the mechanical design of a small robot called a PAMI, which will be designed to launch balls.</p>
                     <p class="entry__links"><a href="https://www.7robot.fr/" target="_blank" rel="noopener">7Robot website</a></p>
                   </div>
@@ -144,7 +150,7 @@
                         <li>Python</li>
                         <li>C</li>
                         <li>SQL</li>
-                        <li>Latex</li>
+                        <li>LaTeX</li>
                       </ul>
                     </dd>
                   </div>
@@ -175,7 +181,7 @@
                         <li>Adaptability</li>
                       </ul>
                     </dd>
-                  </div>                  
+                  </div>
                 </dl>
               </div>
 
@@ -190,7 +196,7 @@
             <h2 id="mobility-title">International Mobility</h2>
             <p class="domain__lead">My language levels and my mobility project.</p>
           </header>
-          
+
           <div class="levels">
             <div class="level">
               <h3 class="level__label">English</h3>
@@ -201,17 +207,15 @@
               <p class="level__value">Level : beginner</p>
             </div>
           </div>
-          
+
           <article class="entry">
             <div class="entry__body">
               <p class="entry__meta"><span class="entry__kind" style="display:inline-flex;align-items:center;gap:0.45rem"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" style="color:var(--band);transform:rotate(45deg)"><path d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z"/></svg>Mobility project</span> September 2027 - March 2028 or March 2028 - July 2028</p>
               <h3 class="entry__title">Studying or working abroad</h3>
               <p>International mobility is part of the ENSEEIHT degree: a semester at a partner university, an internship abroad, or a gap year.</p>
-              <p>My main goal is to complete a semester or a gap year abroad to deepen my knowledge and develop my technical skills in robotics, electronics, and mechanical engineering. I am particularly interested in studying in Sweden or South Korea, two countries recognized for their technological innovation, advanced engineering research, and strong industrial ecosystems.
-
-Target Destinations: I am primarily targeting universities such as Luleå University of Technology and Uppsala University in Sweden, as well as Hanyang University in South Korea. These institutions offer opportunities to explore advanced engineering fields and develop expertise in areas such as robotics, automation, electronic systems, and mechanical design.
-
-This international experience would allow me to strengthen my theoretical knowledge while gaining practical experience through engineering projects and research activities. It would also provide an opportunity to discover different approaches to technological innovation and engineering, broaden my international perspective, and improve my English in an academic and professional environment.</p>
+              <p>My main goal is to complete a semester or a gap year abroad to deepen my knowledge and develop my technical skills in robotics, electronics, and mechanical engineering. I am particularly interested in studying in Sweden or South Korea, two countries recognized for their technological innovation, advanced engineering research, and strong industrial ecosystems.</p>
+              <p>Target Destinations: I am primarily targeting universities such as Luleå University of Technology and Uppsala University in Sweden, as well as Hanyang University in South Korea. These institutions offer opportunities to explore advanced engineering fields and develop expertise in areas such as robotics, automation, electronic systems, and mechanical design.</p>
+              <p>This international experience would allow me to strengthen my theoretical knowledge while gaining practical experience through engineering projects and research activities. It would also provide an opportunity to discover different approaches to technological innovation and engineering, broaden my international perspective, and improve my English in an academic and professional environment.</p>
             </div>
           </article>
         </section>
@@ -226,18 +230,15 @@ This international experience would allow me to strengthen my theoretical knowle
 
           <article class="entry entry--photo">
             <figure class="entry__photo">
-              <!-- photo du CNU -->
+              <!-- photo du SNU -->
               <img src="SNU.png" width="400" height="300" alt="Photo of my SNU commitment" loading="lazy">
             </figure>
             <div class="entry__body">
               <p class="entry__meta"><span class="entry__kind">Commitment</span> 2023 </p>
               <h3 class="entry__title">SNU</h3>
-              <p>I participated in the *Service National Universel* (SNU), a French national program designed to promote civic engagement, citizenship, and republican values among young people.
-
-During my cohesion stay, I took part in various activities, including military base visits, learning military drills, and participating in flag-raising ceremonies. I also attended educational sessions on the values of the French Republic, as well as awareness conferences on topics such as bullying and artificial intelligence.
-
-This experience helped me develop my sense of civic responsibility, strengthen my understanding of French republican values, and raise my awareness of important social and technological issues.
-</p>
+              <p>I participated in the <em>Service National Universel</em> (SNU), a French national program designed to promote civic engagement, citizenship, and republican values among young people.</p>
+              <p>During my cohesion stay, I took part in various activities, including military base visits, learning military drills, and participating in flag-raising ceremonies. I also attended educational sessions on the values of the French Republic, as well as awareness conferences on topics such as bullying and artificial intelligence.</p>
+              <p>This experience helped me develop my sense of civic responsibility, strengthen my understanding of French republican values, and raise my awareness of important social and technological issues.</p>
             </div>
           </article>
 
@@ -250,7 +251,7 @@ This experience helped me develop my sense of civic responsibility, strengthen m
               <p class="entry__meta"><span class="entry__kind">Festival</span> 2026 </p>
               <h3 class="entry__title">Futurs Proches</h3>
               <p>Futurs Proches is the festival of campuses in transition, organised by the Université de Toulouse and its partners, with conferences, workshops and stands on ecological and societal transitions.</p>
-              <p>I participated in the Future Proche festival, which raises awareness of future challenges, including climate change, gender inequalities, and the development of generative AI.
+              <p>I participated in the Futurs Proches festival, which raises awareness of future challenges, including climate change, gender inequalities, and the development of generative AI.
                 I attended an interesting session on generative AI and took part in an educational game exploring cultural differences and gender stereotypes around the world, particularly regarding sports, parental leave, and workplace inequalities.
                 These activities broadened my understanding of current social and technological issues.</p>
               <p class="entry__links"><a href="https://futurs-proches.univ-toulouse.fr" target="_blank" rel="noopener">Festival website</a></p>
@@ -260,9 +261,9 @@ This experience helped me develop my sense of civic responsibility, strengthen m
           <!-- Pour ajouter un engagement : copie un bloc <article>...</article> ci-dessus et colle-le ici. -->
         </section>
 
-        
- <!-- ===================== 5. CAREER DEVELOPMENT ===================== -->
-        <section id="career" class="domain" data-band="53" aria-labelledby="career-title">
+
+        <!-- ===================== 5. CAREER DEVELOPMENT ===================== -->
+        <section id="career" class="domain" data-band="5" aria-labelledby="career-title">
           <header class="domain__head">
             <h2 id="career-title">Career Development</h2>
             <p class="domain__lead">My CV and my professional experience.</p>
@@ -270,16 +271,11 @@ This experience helped me develop my sense of civic responsibility, strengthen m
 
           <div class="docs">
             <h3 class="subhead">CV &amp; documents</h3>
-            <!-- À compléter : dépose ton CV dans assets/ sous le nom CV_Lucas_Poidevin.pdf -->
-            <p><a class="btn btn--solid" href="CV_Lucas_Poidevin_FR.pdf">Download my CV (FR)</a>  
-               <a class="btn btn--solid" href="CV_Lucas_Poidevin_EN.pdf">Download my CV (EN)</a>  
+            <!-- Les CV sont déposés à côté de index.html. Pour un autre document, ajoute un bouton :
+                 <a class="btn btn--solid" href="lettre-motivation.pdf">Cover letter</a> -->
+            <p><a class="btn btn--solid" href="CV_Lucas_Poidevin_FR.pdf">Download my CV (FR)</a>
+               <a class="btn btn--solid" href="CV_Lucas_Poidevin_EN.pdf">Download my CV (EN)</a>
                <a class="btn btn--solid" href="lien de la video de mon pitch">My pitch (EN)</a></p>
-            <ul class="doclist">
-              <!-- Un autre document : 
-              <ul class="doclist">
-              <li><a href="assets/lettre-motivation.pdf">Cover letter</a></li>
-              ...
-              </ul>  -->
           </div>
 
           <h3 class="subhead">Internships</h3>
@@ -297,7 +293,7 @@ This experience helped me develop my sense of civic responsibility, strengthen m
           <!-- Pour ajouter un stage : copie le bloc <article>...</article> ci-dessus et colle-le ici. -->
         </section>
 
-        
+
         <!-- ===================== 6. SPORT & OTHER ACTIVITIES ===================== -->
         <section id="sport" class="domain" data-band="6" aria-labelledby="sport-title">
           <header class="domain__head">
@@ -307,35 +303,35 @@ This experience helped me develop my sense of civic responsibility, strengthen m
 
           <article class="entry entry--photo">
             <figure class="entry__photo">
-              <!-- À compléter : photo de volley -->
+              <!-- photo de volley -->
               <img src="Volley.jpeg" width="400" height="300" alt="Photo of me playing volleyball" loading="lazy">
             </figure>
             <div class="entry__body">
               <p class="entry__meta"><span class="entry__kind">Team sport</span></p>
               <h3 class="entry__title">Volleyball</h3>
-              <p> I played volleyball for two years, serving as team captain during my final year.
-                This experience helped me develop teamwork, communication, and leadership skills. </p>
+              <p>I played volleyball for two years, serving as team captain during my final year.
+                This experience helped me develop teamwork, communication, and leadership skills.</p>
             </div>
           </article>
 
           <article class="entry entry--photo">
             <figure class="entry__photo">
-              <!-- À compléter : photo de calisthénie -->
+              <!-- photo de calisthénie -->
               <img src="Calisthenie.jpg" width="400" height="300" alt="Photo of me doing calisthenics" loading="lazy">
             </figure>
             <div class="entry__body">
               <p class="entry__meta"><span class="entry__kind">Training</span></p>
               <h3 class="entry__title">Calisthenics</h3>
               <p>Strength training that uses only your own body weight, from pull-ups to handstands and full-planche.</p>
-              <p> Calisthenics allows me to challenge myself through bodyweight training and work towards long-term physical goals.
-                I enjoy setting clear, ambitious objectives and working consistently towards achieving them, which has strengthened my discipline, perseverance, and ability to stay motivated. </p>
+              <p>Calisthenics allows me to challenge myself through bodyweight training and work towards long-term physical goals.
+                I enjoy setting clear, ambitious objectives and working consistently towards achieving them, which has strengthened my discipline, perseverance, and ability to stay motivated.</p>
             </div>
           </article>
 
           <!-- Pour ajouter un loisir ou une activité : copie un bloc <article>...</article> ci-dessus et colle-le ici. -->
         </section>
 
-        
+
         <!-- ===================== 7. CONTACT ===================== -->
         <section id="contact" class="domain" data-band="7" aria-labelledby="contact-title">
           <header class="domain__head">
@@ -343,20 +339,14 @@ This experience helped me develop my sense of civic responsibility, strengthen m
             <p class="domain__lead">Write to me about an internship, a project, or robotics and electronics.</p>
           </header>
 
-          <!--
-            Quand tu as tes coordonnées, remplace chaque <span class="todo"> par un lien, par exemple :
-              <a href="mailto:prenom.nom@exemple.fr">prenom.nom@exemple.fr</a>
-              <a href="https://www.linkedin.com/in/ton-profil" target="_blank" rel="noopener">linkedin.com/in/ton-profil</a>
-              <a href="https://github.com/ton-pseudo" target="_blank" rel="noopener">github.com/ton-pseudo</a>
-          -->
           <dl class="contact">
             <div class="contact__row">
               <dt>Email</dt>
-              <p>poidevin.lucas33@gmail.com</p>
+              <dd><a href="mailto:poidevin.lucas33@gmail.com">poidevin.lucas33@gmail.com</a></dd>
             </div>
             <div class="contact__row">
               <dt>Phone</dt>
-              <dd><span class="todo">À compléter : lien vers ton profil</span></dd>
+              <dd><span class="todo">À compléter : ton numéro de téléphone</span></dd>
             </div>
             <div class="contact__row">
               <dt>GitHub</dt>
