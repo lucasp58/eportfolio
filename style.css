@@ -819,7 +819,7 @@ body:has(#contact:target) .site-nav a[href="#contact"] {
   line-height: 1.5;
 }
 
-/* 10.1 Analyse de 3 rôles modèles ----------------------------------------- */
+/* 10.1 Analyse de 3 rôles modèles ----------------------------------------- 
 .roles-section {
   max-inline-size: 62rem;
   margin-block: 2rem 0;
@@ -920,6 +920,71 @@ body:has(#contact:target) .site-nav a[href="#contact"] {
     min-height: auto;
   }
 }
+*/
+
+/* Rôles modèles : trois fiches côte à côte (à la fin de Career Development) */
+.roles-section {
+  margin-block-start: 3rem;
+  padding-block-start: 2.5rem;
+  border-top: 1px solid var(--line);
+}
+
+.roles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  gap: 1rem;
+}
+
+.role-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  padding: 1.5rem 1.4rem 1.4rem;
+  background: var(--panel);
+  border: 1px solid var(--line-2);
+  border-top: 5px solid var(--band);
+  border-radius: 4px;
+}
+
+.role-title {
+  font-size: 1.125rem;
+  font-weight: 700;
+  font-stretch: 106%;
+  line-height: 1.3;
+  overflow-wrap: break-word;
+  text-wrap: balance;
+}
+
+.role-content {
+  flex: 1;
+}
+
+.role-content > * + * {
+  margin-block-start: 0.4rem;
+}
+
+.role-label {
+  color: var(--muted);
+  font-size: 0.9375rem;
+  font-weight: 650;
+}
+
+.role-text {
+  color: var(--ink-2);
+}
+
+.mobility-pill {
+  align-self: flex-start;
+  padding: 0.35rem 0.8rem;
+  background: color-mix(in srgb, var(--band) 14%, transparent);
+  border: 1px solid color-mix(in srgb, var(--band) 55%, transparent);
+  border-radius: 999px;
+  color: var(--ink);
+  font-size: 0.9375rem;
+  font-weight: 650;
+  line-height: 1.3;
+}
+
 
 /* 11 Contact et pied de page ------------------------------------------------ */
 .contact {
