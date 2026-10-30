@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lucas Poidevin | Portfolio ENSEEIHT, Électronique et Automatique</title>
+  <meta name="description" content="Portfolio de Lucas Poidevin, élève-ingénieur à l'ENSEEIHT (Toulouse INP) en Électronique, Énergie électrique et Automatique. Robotique, nouvelles technologies et électronique.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Lucas Poidevin | Portfolio ENSEEIHT">
+  <meta property="og:description" content="Cursus ingénieur, mobilité internationale, engagement citoyen, développement de carrière et sport.">
+  <meta name="theme-color" content="#f3f5f7" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0f1720" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='4' fill='%2315202b'/%3E%3Ccircle cx='12' cy='9' r='4' fill='%23f3f5f7'/%3E%3Cpath d='M4.5 20c0-4 3.4-6.2 7.5-6.2s7.5 2.2 7.5 6.2z' fill='%23f3f5f7'/%3E%3C/svg%3E">
+  <link rel="alternate" hreflang="en" href="index.html">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<!--
+  PORTFOLIO DE LUCAS POIDEVIN (version française)
+
+  Cette page est la jumelle de index.html (version anglaise).
+  Quand tu modifies un texte ou une photo ici, fais la même modification dans index.html.
+  - Ctrl+F sur « À compléter » : tu retrouves tout ce qu'il reste à remplir.
+  - Retour à la ligne dans un texte : écris <br> à l'endroit voulu.
+-->
+
+<body>
+  <a class="skip-link" href="#main">Aller au contenu</a>
+
+  <div class="shell">
+
+    <!-- ===================== NAVIGATION (les 7 mots-clés) ===================== -->
+    <header class="site-nav">
+      <a class="brand" href="#welcome" aria-label="Lucas Poidevin, retour en haut de la page">
+        <span class="brand__mark"><svg class="mark" viewBox="0 0 24 24" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="8.5" r="4" fill="currentColor"/><path d="M4 20.5c0-4.4 3.6-7 8-7s8 2.6 8 7z" fill="currentColor"/></svg></span>
+        <span class="brand__name">Lucas Poidevin</span>
+      </a>
+      <nav class="site-nav__links" aria-label="Sections du portfolio">
+        <ul>
+          <li><a href="#welcome" data-band="1">Accueil</a></li>
+          <li><a href="#course" data-band="2">Cursus ingénieur</a></li>
+          <li><a href="#mobility" data-band="3">Mobilité internationale</a></li>
+          <li><a href="#civic" data-band="4">Engagement citoyen</a></li>
+          <li><a href="#career" data-band="5">Développement de carrière</a></li>
+          <li><a href="#sport" data-band="6">Sport &amp; autres activités</a></li>
+          <li><a href="#contact" data-band="7">Contact</a></li>
+        </ul>
+      </nav>
+      <!-- Bouton de langue : mène à la version anglaise -->
+      <a class="lang-switch" href="index.html" hreflang="en" lang="en" title="View the site in English" aria-label="View the site in English"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg>EN</a>
+    </header>
+
+    <div class="content">
+      <main id="main">
+
+        <!-- ===================== 1. ACCUEIL ===================== -->
+        <section id="welcome" class="domain" data-band="1" aria-labelledby="welcome-title">
+          <div class="hero">
+            <div class="hero__text">
+              <h1 class="hero__name" id="welcome-title"><span>Lucas</span> <span>Poidevin</span></h1>
+              <p class="hero__role">Élève-ingénieur à l’ENSEEIHT, Toulouse INP</p>
+              <p class="hero__track">Électronique, Énergie électrique &amp; Automatique (3EA)</p>
+              <p class="hero__lead">Je m’intéresse à la robotique, aux nouvelles technologies et à l’électronique. Vous trouverez ici mon cursus d’ingénieur, mes projets et les expériences qui les entourent.</p>
+              <p class="hero__lead">Je recherche actuellement un stage de deux mois en entreprise pour l’été 2027, de début juin à début août.
+                Je souhaite mettre en pratique mes compétences techniques, acquérir une première expérience concrète du monde industriel et approfondir mes connaissances en milieu professionnel.</p>
+              <p class="hero__actions">
+                <a class="btn btn--solid" href="#course">Voir mes projets</a>
+                <a class="btn" href="#contact">Me contacter</a>
+              </p>
+            </div>
+
+            <figure class="hero__photo">
+              <img src="Photo-eportfolio.png" width="400" height="500" alt="Portrait de Lucas Poidevin">
+            </figure>
+          </div>
+        </section>
+
+
+        <!-- ===================== 2. CURSUS INGÉNIEUR ===================== -->
+        <section id="course" class="domain" data-band="2" aria-labelledby="course-title">
+          <header class="domain__head">
+            <h2 id="course-title">Cursus ingénieur</h2>
+            <p class="domain__lead">Mes projets et les compétences que j’utilise.</p>
+          </header>
+
+          <!-- Sous-onglets : les <input>, les <label> et les panneaux sont dans le même ordre. -->
+          <div class="tabs">
+            <input type="radio" name="tabs-course" id="course-projects" checked>
+            <input type="radio" name="tabs-course" id="course-skills">
+
+            <div class="tabs__bar">
+              <label for="course-projects">Projets</label>
+              <label for="course-skills">Compétences</label>
+            </div>
+
+            <div class="tabs__panels">
+
+              <!-- ---------- Projets ---------- -->
+              <div class="tabs__panel">
+                <h3 class="panel__title">Projets</h3>
+
+                <article class="entry entry--photo">
+                  <figure class="entry__photo">
+                    <!-- photo ou schéma du TIPE -->
+                    <img src="Image-crypto.jpeg" width="400" height="300" alt="Photo de mon projet de TIPE" loading="lazy">
+                  </figure>
+                  <div class="entry__body">
+                    <p class="entry__meta"><span class="entry__kind">TIPE</span>2026</p>
+                    <h4 class="entry__title">Automates cellulaires et cryptographie</h4>
+                    <p>Un automate cellulaire est une grille de cellules qui se mettent toutes à jour en même temps, chacune suivant la même règle simple. Certaines règles produisent des motifs d’apparence aléatoire, ce qui les rend intéressantes pour la cryptographie.</p>
+                    <p>J’ai implémenté en Python un générateur de nombres pseudo-aléatoires (PRNG), une fonction de hachage et un chiffrement par flot, tous fondés sur l’automate cellulaire de la règle 30.
+                      J’ai également réalisé plusieurs tests pour évaluer leurs performances et leurs applications possibles en cryptographie.</p>
+                  </div>
+                </article>
+
+                <article class="entry entry--photo">
+                  <figure class="entry__photo">
+                    <!-- photo du robot ou du club -->
+                    <img src="CDF-robotique.jpg" width="400" height="300" alt="Photo de 7Robot" loading="lazy">
+                  </figure>
+                  <div class="entry__body">
+                    <p class="entry__meta"><span class="entry__kind">Club étudiant</span>2026 - aujourd’hui</p>
+                    <h4 class="entry__title">7Robot, le club de robotique de l’ENSEEIHT</h4>
+                    <p>Je suis impliqué dans 7Robot, le club de robotique de l’école.</p>
+                    <p>Je participerai à la Coupe de France de robotique avec mon club.
+                      Mon rôle dans l’équipe consiste à travailler sur la conception mécanique d’un petit robot appelé PAMI, qui sera conçu pour lancer des balles.</p>
+                    <p class="entry__links"><a href="https://www.7robot.fr/" target="_blank" rel="noopener">Site de 7Robot</a></p>
+                  </div>
+                </article>
+
+                <!-- Pour ajouter un projet : copie un bloc <article>...</article> ci-dessus et colle-le ici. -->
+              </div>
+
+              <!-- ---------- Compétences ---------- -->
+              <div class="tabs__panel">
+                <h3 class="panel__title">Compétences</h3>
+                <dl class="skills">
+                  <div class="skills__row">
+                    <dt>Programmation</dt>
+                    <dd>
+                      <ul class="chips">
+                        <li>Python</li>
+                        <li>C</li>
+                        <li>SQL</li>
+                        <li>LaTeX</li>
+                      </ul>
+                    </dd>
+                  </div>
+                  <div class="skills__row">
+                    <dt>Conception &amp; CAO</dt>
+                    <dd>
+                      <ul class="chips">
+                        <li>SolidWorks</li>
+                      </ul>
+                    </dd>
+                  </div>
+                  <div class="skills__row">
+                    <dt>Outils</dt>
+                    <dd>
+                      <ul class="chips">
+                        <li>ChatGPT</li>
+                        <li>Claude</li>
+                        <li>Windows</li>
+                      </ul>
+                    </dd>
+                  </div>
+                  <div class="skills__row">
+                    <dt>Savoir-être</dt>
+                    <dd>
+                      <ul class="chips">
+                        <li>Travail d’équipe</li>
+                        <li>Créativité</li>
+                        <li>Adaptabilité</li>
+                      </ul>
+                    </dd>
+                  </div>
+                </dl>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+
+        <!-- ===================== 3. MOBILITÉ INTERNATIONALE ===================== -->
+        <section id="mobility" class="domain" data-band="3" aria-labelledby="mobility-title">
+          <header class="domain__head">
+            <h2 id="mobility-title">Mobilité internationale</h2>
+            <p class="domain__lead">Mes niveaux de langue et mon projet de mobilité.</p>
+          </header>
+
+          <div class="levels">
+            <div class="level">
+              <h3 class="level__label">Anglais</h3>
+              <p class="level__value">Niveau : B2 <br> Score TOEIC : à venir</p>
+            </div>
+            <div class="level">
+              <h3 class="level__label">Japonais (LV2)</h3>
+              <p class="level__value">Niveau : débutant</p>
+            </div>
+          </div>
+
+          <article class="entry">
+            <div class="entry__body">
+              <p class="entry__meta"><span class="entry__kind" style="display:inline-flex;align-items:center;gap:0.45rem"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" style="color:var(--band);transform:rotate(45deg)"><path d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z"/></svg>Projet de mobilité</span> Septembre 2027 - mars 2028 ou mars 2028 - juillet 2028</p>
+              <h3 class="entry__title">Étudier ou travailler à l’étranger</h3>
+              <p>La mobilité internationale fait partie du cursus de l’ENSEEIHT : un semestre dans une université partenaire, un stage à l’étranger ou une année de césure.</p>
+              <p>Mon objectif principal est d’effectuer un semestre ou une année de césure à l’étranger afin d’approfondir mes connaissances et de développer mes compétences techniques en robotique, en électronique et en génie mécanique. Je suis particulièrement intéressé par la Suède et la Corée du Sud, deux pays reconnus pour leur innovation technologique, leur recherche avancée en ingénierie et leur tissu industriel solide.</p>
+              <p>Destinations visées : je vise principalement des universités comme l’Université de technologie de Luleå et l’Université d’Uppsala en Suède, ainsi que l’Université Hanyang en Corée du Sud. Ces établissements offrent la possibilité d’explorer des domaines avancés de l’ingénierie et de développer une expertise en robotique, automatique, systèmes électroniques et conception mécanique.</p>
+              <p>Cette expérience internationale me permettrait de consolider mes connaissances théoriques tout en acquérant une expérience pratique à travers des projets d’ingénierie et des activités de recherche. Elle serait aussi l’occasion de découvrir d’autres approches de l’innovation technologique et de l’ingénierie, d’élargir ma vision internationale et d’améliorer mon anglais dans un cadre académique et professionnel.</p>
+            </div>
+          </article>
+        </section>
+
+
+        <!-- ===================== 4. ENGAGEMENT CITOYEN ===================== -->
+        <section id="civic" class="domain" data-band="4" aria-labelledby="civic-title">
+          <header class="domain__head">
+            <h2 id="civic-title">Engagement citoyen</h2>
+            <p class="domain__lead">Des engagements en dehors des cours.</p>
+          </header>
+
+          <article class="entry entry--photo">
+            <figure class="entry__photo">
+              <!-- photo du SNU -->
+              <img src="SNU.png" width="400" height="300" alt="Photo de mon engagement au SNU" loading="lazy">
+            </figure>
+            <div class="entry__body">
+              <p class="entry__meta"><span class="entry__kind">Engagement</span> 2023 </p>
+              <h3 class="entry__title">SNU</h3>
+              <p>J’ai participé au <em>Service National Universel</em> (SNU), un dispositif national français visant à promouvoir l’engagement civique, la citoyenneté et les valeurs républicaines auprès des jeunes.</p>
+              <p>Pendant mon séjour de cohésion, j’ai pris part à diverses activités : visites de bases militaires, apprentissage de l’ordre serré et participation à des cérémonies de lever des couleurs. J’ai également assisté à des séances pédagogiques sur les valeurs de la République française, ainsi qu’à des conférences de sensibilisation sur des sujets comme le harcèlement et l’intelligence artificielle.</p>
+              <p>Cette expérience m’a aidé à développer mon sens des responsabilités civiques, à approfondir ma compréhension des valeurs républicaines françaises et à mieux prendre conscience d’enjeux sociaux et technologiques importants.</p>
+            </div>
+          </article>
+
+          <article class="entry entry--photo">
+            <figure class="entry__photo">
+              <!-- photo de Futurs Proches -->
+              <img src="Futurs-proches.png" width="400" height="300" alt="Photo du festival Futurs Proches" loading="lazy">
+            </figure>
+            <div class="entry__body">
+              <p class="entry__meta"><span class="entry__kind">Festival</span> 2026 </p>
+              <h3 class="entry__title">Futurs Proches</h3>
+              <p>Futurs Proches est le festival des campus en transition, organisé par l’Université de Toulouse et ses partenaires, avec des conférences, des ateliers et des stands sur les transitions écologiques et sociétales.</p>
+              <p>J’ai participé au festival Futurs Proches, qui sensibilise aux défis à venir, notamment le changement climatique, les inégalités de genre et le développement de l’IA générative.
+                J’ai assisté à une séance intéressante sur l’IA générative et participé à un jeu pédagogique explorant les différences culturelles et les stéréotypes de genre dans le monde, en particulier dans le sport, les congés parentaux et les inégalités au travail.
+                Ces activités ont élargi ma compréhension des enjeux sociaux et technologiques actuels.</p>
+              <p class="entry__links"><a href="https://futurs-proches.univ-toulouse.fr" target="_blank" rel="noopener">Site du festival</a></p>
+            </div>
+          </article>
+
+          <!-- Pour ajouter un engagement : copie un bloc <article>...</article> ci-dessus et colle-le ici. -->
+        </section>
+
+
+        <!-- ===================== 5. DÉVELOPPEMENT DE CARRIÈRE ===================== -->
+        <section id="career" class="domain" data-band="5" aria-labelledby="career-title">
+          <header class="domain__head">
+            <h2 id="career-title">Développement de carrière</h2>
+            <p class="domain__lead">Mon CV et mon expérience professionnelle.</p>
+          </header>
+
+          <div class="docs">
+            <h3 class="subhead">CV &amp; documents</h3>
+            <!-- Les CV sont déposés à côté de index.html. Pour un autre document, ajoute un bouton :
+                 <a class="btn btn--solid" href="lettre-motivation.pdf">Lettre de motivation</a> -->
+            <p><a class="btn btn--solid" href="CV_Lucas_Poidevin_FR.pdf">Télécharger mon CV (FR)</a>
+               <a class="btn btn--solid" href="CV_Lucas_Poidevin_EN.pdf">Télécharger mon CV (EN)</a>
+               <a class="btn btn--solid" href="lien de la video de mon pitch">Mon pitch (EN)</a></p>
+          </div>
+
+          <h3 class="subhead">Stages</h3>
+
+          <article class="entry">
+            <div class="entry__body">
+              <p class="entry__meta"><span class="entry__kind">Stage</span> à venir </p>
+              <h4 class="entry__title">Recherche</h4>
+              <p>Je recherche actuellement un stage de 6 à 8 semaines pour l’été 2027, de début juin à août.
+                Cette opportunité me permettrait d’acquérir ma première expérience professionnelle et de découvrir le monde de l’entreprise.
+                Je m’intéresse particulièrement aux postes liés à l’électronique, à la robotique ou au développement logiciel, où je pourrais mettre en pratique mes connaissances techniques et développer davantage mes compétences.</p>
+            </div>
+          </article>
+
+          <!-- Pour ajouter un stage : copie le bloc <article>...</article> ci-dessus et colle-le ici. -->
+        </section>
+
+
+        <!-- ===================== 6. SPORT & AUTRES ACTIVITÉS ===================== -->
+        <section id="sport" class="domain" data-band="6" aria-labelledby="sport-title">
+          <header class="domain__head">
+            <h2 id="sport-title">Sport &amp; autres activités</h2>
+            <p class="domain__lead">Ce que je fais en dehors de l’ingénierie.</p>
+          </header>
+
+          <article class="entry entry--photo">
+            <figure class="entry__photo">
+              <!-- photo de volley -->
+              <img src="Volley.jpeg" width="400" height="300" alt="Photo de moi en train de jouer au volley-ball" loading="lazy">
+            </figure>
+            <div class="entry__body">
+              <p class="entry__meta"><span class="entry__kind">Sport collectif</span></p>
+              <h3 class="entry__title">Volley-ball</h3>
+              <p>J’ai pratiqué le volley-ball pendant deux ans et j’ai été capitaine de l’équipe lors de ma dernière année.
+                Cette expérience m’a aidé à développer l’esprit d’équipe, la communication et le leadership.</p>
+            </div>
+          </article>
+
+          <article class="entry entry--photo">
+            <figure class="entry__photo">
+              <!-- photo de calisthénie -->
+              <img src="Calisthenie.jpg" width="400" height="300" alt="Photo de moi en train de faire de la calisthénie" loading="lazy">
+            </figure>
+            <div class="entry__body">
+              <p class="entry__meta"><span class="entry__kind">Entraînement</span></p>
+              <h3 class="entry__title">Calisthénie</h3>
+              <p>Un entraînement de force qui n’utilise que le poids du corps, des tractions aux équilibres sur les mains, jusqu’à la planche complète.</p>
+              <p>La calisthénie me permet de me dépasser grâce à l’entraînement au poids du corps et de viser des objectifs physiques à long terme.
+                J’aime me fixer des objectifs clairs et ambitieux et travailler régulièrement pour les atteindre, ce qui a renforcé ma discipline, ma persévérance et ma capacité à rester motivé.</p>
+            </div>
+          </article>
+
+          <!-- Pour ajouter un loisir ou une activité : copie un bloc <article>...</article> ci-dessus et colle-le ici. -->
+        </section>
+
+
+        <!-- ===================== 7. CONTACT ===================== -->
+        <section id="contact" class="domain" data-band="7" aria-labelledby="contact-title">
+          <header class="domain__head">
+            <h2 id="contact-title">Contact</h2>
+            <p class="domain__lead">Écrivez-moi à propos d’un stage, d’un projet, ou de robotique et d’électronique.</p>
+          </header>
+
+          <dl class="contact">
+            <div class="contact__row">
+              <dt>E-mail</dt>
+              <dd><a href="mailto:poidevin.lucas33@gmail.com">poidevin.lucas33@gmail.com</a></dd>
+            </div>
+            <div class="contact__row">
+              <dt>Téléphone</dt>
+              <dd><span class="todo">À compléter : ton numéro de téléphone</span></dd>
+            </div>
+            <div class="contact__row">
+              <dt>GitHub</dt>
+              <dd><a href="https://github.com/lucasp58" target="_blank" rel="noopener">github.com/lucasp58</a></dd>
+            </div>
+          </dl>
+        </section>
+
+      </main>
+
+      <footer class="site-footer">
+        <p>© 2026 Lucas Poidevin. Portfolio étudiant, ENSEEIHT, Toulouse INP.</p>
+        <p><a href="#welcome">Retour en haut</a></p>
+      </footer>
+    </div>
+
+  </div>
+</body>
+</html>
